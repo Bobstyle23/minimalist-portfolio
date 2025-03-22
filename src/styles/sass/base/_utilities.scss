@@ -1,0 +1,7 @@
+.hidden {
+  display: none;
+}
+
+.container {
+  @include containerWidth(111rem);
+}

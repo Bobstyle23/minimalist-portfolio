@@ -1,0 +1,17 @@
+@mixin respond-to($breakpoint) {
+  @media #{$breakpoint} {
+    @content;
+  }
+}
+
+@mixin typography($size, $weight: 400, $height: 1, $spacing: 0) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
+@mixin containerWidth($width) {
+  max-width: $width;
+  margin-inline: auto;
+}

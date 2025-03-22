@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <title>Main page</title>
+  </head>
+  <body>
+
+    <header class="header">
+  <a href="./index.html">
+    <svg class="icon icon__logo icon--black">
+      <use href="./img/svgsprite/sprite.symbol.svg#logo" />
+    </svg>
+  </a>
+  <nav class="navigation">
+    <ul class="navigation__list" role="list">
+      <li class="navigation__list--item"><a href="#">Home</a></li>
+      <li class="navigation__list--item"><a href="#">Portfolio</a></li>
+      <li class="navigation__list--item"><a href="#">Contact Me</a></li>
+    </ul>
+  </nav>
+  <button type="button" class="navigation__menu-btn">
+    <svg class="icon icon__hamburger icon--black">
+      <use href="./img/svgsprite/sprite.symbol.svg#hamburger" />
+    </svg>
+  </button>
+  <button type="button" class="navigation__menu-btn--close hidden">
+    <svg class="icon icon__close icon--black">
+      <use href="./img/svgsprite/sprite.symbol.svg#close" />
+    </svg>
+  </button>
+</header>
+
+    <picture>
+<source srcset="./img/homepage/desktop/image-homepage-profile.webp 1x, ./img/homepage/desktop/image-homepage-profile@2x.webp 2x, ./img/homepage/desktop/image-homepage-profile@3x.webp 3x, ./img/homepage/desktop/image-homepage-profile@4x.webp 4x" type="image/webp">
+<img src="./img/homepage/desktop/image-homepage-profile.webp" alt="" />
+</picture>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>
