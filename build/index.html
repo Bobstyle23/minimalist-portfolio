@@ -16,17 +16,23 @@
   </a>
   <nav class="navigation">
     <ul class="navigation__list" role="list">
-      <li class="navigation__list--item"><a href="#">Home</a></li>
-      <li class="navigation__list--item"><a href="#">Portfolio</a></li>
-      <li class="navigation__list--item"><a href="#">Contact Me</a></li>
+      <li class="navigation__list navigation__list--item">
+        <a href="#">Home</a>
+      </li>
+      <li class="navigation__list navigation__list--item">
+        <a href="#">Portfolio</a>
+      </li>
+      <li class="navigation__list navigation__list--item">
+        <a href="#">Contact Me</a>
+      </li>
     </ul>
   </nav>
-  <button type="button" class="navigation__menu-btn">
+  <button type="button" class="menu__btn menu__btn--open">
     <svg class="icon icon__hamburger icon--black">
       <use href="./img/svgsprite/sprite.symbol.svg#hamburger" />
     </svg>
   </button>
-  <button type="button" class="navigation__menu-btn--close hidden">
+  <button type="button" class="menu__btn menu__btn--close hidden">
     <svg class="icon icon__close icon--black">
       <use href="./img/svgsprite/sprite.symbol.svg#close" />
     </svg>
@@ -37,6 +43,13 @@
 <source srcset="./img/homepage/desktop/image-homepage-profile.webp 1x, ./img/homepage/desktop/image-homepage-profile@2x.webp 2x, ./img/homepage/desktop/image-homepage-profile@3x.webp 3x, ./img/homepage/desktop/image-homepage-profile@4x.webp 4x" type="image/webp">
 <img src="./img/homepage/desktop/image-homepage-profile.webp" alt="" />
 </picture>
+    <button type="button" class="btn btn--normal">
+      <svg class="icon icon__btn icon__btn--green">
+        <use href="./img/svgsprite/sprite.symbol.svg#down-arrows" />
+      </svg>
+
+      Hello
+    </button>
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>

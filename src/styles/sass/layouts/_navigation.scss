@@ -30,10 +30,6 @@
         }
       }
     }
-
-    &__menu-btn {
-      display: block;
-    }
   }
 }
 
@@ -57,16 +53,16 @@
             color: $color-dark-blue;
           }
 
-          &:hover,
-          &:active {
-            color: $color-cyan;
-          }
+          /* &:hover, */
+          /* &:active { */
+          /*   color: $color-cyan; */
+          /* } */
         }
       }
     }
+  }
 
-    &__menu-btn {
-      display: none;
-    }
+  .menu__btn {
+    display: none;
   }
 }

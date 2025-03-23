@@ -10,6 +10,20 @@
     height: 2rem;
   }
 
+  &__btn {
+    width: 1.6rem;
+    height: 1.2rem;
+    fill: transparent;
+
+    &--green {
+      stroke: $color-cyan;
+    }
+
+    &--white {
+      stroke: $color-white;
+    }
+  }
+
   &--black {
   }
 

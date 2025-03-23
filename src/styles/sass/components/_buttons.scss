@@ -1,0 +1,7 @@
+.btn {
+  @extend %button-style;
+
+  &--normal {
+    background-color: $color-dark-blue;
+  }
+}
