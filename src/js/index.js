@@ -12,11 +12,3 @@ const toggleMenu = (topValue) => {
 closeMenu.addEventListener("click", () => toggleMenu("-100%"));
 
 openMenu.addEventListener("click", () => toggleMenu("8.8rem"));
-
-for (let item of navigationListItems) {
-  item.addEventListener("click", () => {
-    setTimeout(() => {
-      toggleMenu("-100%");
-    }, 200);
-  });
-}
