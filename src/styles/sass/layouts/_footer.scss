@@ -12,6 +12,8 @@
   }
 
   &__contact {
+    @include containerWidth(111rem);
+    width: 100%;
     row-gap: 4rem;
     padding-inline: 3.2rem;
     text-align: center;
@@ -51,10 +53,10 @@
     background-color: $color-grayish-blue;
     justify-self: stretch;
     padding-block: 5.6rem;
-  }
 
-  &__navigation-list {
-    gap: 3.2rem;
+    &-list {
+      gap: 3.2rem;
+    }
   }
 
   &__icons {
@@ -100,6 +102,14 @@
 
     &__icons {
       margin-left: auto;
+    }
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .footer {
+    &__contact {
+      padding-inline: 0;
     }
   }
 }
