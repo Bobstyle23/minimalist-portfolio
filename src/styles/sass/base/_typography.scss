@@ -1,0 +1,21 @@
+%heading-1 {
+  @include typography(5rem, $spacing: -0.045rem);
+}
+
+%heading-2 {
+  @include typography(4rem, $height: calc(4.2 / 4), $spacing: -0.036rem);
+}
+
+%heading-3 {
+  @include typography(3.2rem, 400, calc(3.6 / 3.2), -0.029rem);
+}
+
+%body-1 {
+  @include typography(1.6rem, 400, calc(3 / 1.6));
+  font-family: PublincSans;
+}
+
+%body-2 {
+  @include typography(1.5rem, 400, calc(3 / 1.5));
+  font-family: PublincSans;
+}

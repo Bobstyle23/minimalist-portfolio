@@ -4,7 +4,7 @@
   }
 }
 
-@mixin typography($size, $weight: 400, $height: 1, $spacing: 0) {
+@mixin typography($size, $weight: 700, $height: 1, $spacing: 0) {
   font-size: $size;
   font-weight: $weight;
   line-height: $height;
