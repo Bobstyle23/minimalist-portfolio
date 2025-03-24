@@ -1,0 +1,41 @@
+.footer {
+  @extend %grid;
+  row-gap: 8rem;
+
+  &__contact,
+  &__navigation,
+  &__navigation-list,
+  &__icons {
+    @extend %flexbox;
+  }
+
+  &__contact {
+    gap: 4rem;
+    padding-inline: 3.2rem;
+    text-align: center;
+  }
+
+  &__title {
+    @extend %heading-2;
+  }
+
+  &__line {
+    display: none;
+  }
+
+  &__navigation {
+    gap: 4rem;
+    background-color: $color-grayish-blue;
+    justify-self: stretch;
+    padding-block: 5.6rem;
+  }
+
+  &__navigation-list {
+    gap: 3.2rem;
+  }
+
+  &__icons {
+    flex-flow: row nowrap;
+    gap: 1.6rem;
+  }
+}

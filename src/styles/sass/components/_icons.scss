@@ -24,9 +24,17 @@
     }
   }
 
+  &__footer {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
   &--black {
+    stroke: #000;
+    fill: #000;
   }
 
   &--white {
+    fill: $color-white;
   }
 }
