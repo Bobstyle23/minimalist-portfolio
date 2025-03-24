@@ -19,6 +19,7 @@
 
   &__title {
     @extend %heading-2;
+    max-width: 35rem;
   }
 
   &__line {
@@ -68,15 +69,16 @@
 
     &__contact {
       text-align: left;
-      grid-template-columns: repeat(3, auto);
+      grid-template-columns: auto 1fr auto;
       row-gap: 0;
       column-gap: 3.2rem;
+      justify-self: stretch;
     }
 
     &__line {
       display: block;
-      width: 11.3rem;
-      height: 1px;
+      width: clamp(11.3rem, 100%, 53.4rem);
+      height: 0.1rem;
       background-color: rgba($color: $color-grayish-blue, $alpha: 0.1);
     }
 
