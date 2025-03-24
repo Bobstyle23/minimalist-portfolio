@@ -53,10 +53,10 @@
             color: $color-dark-blue;
           }
 
-          /* &:hover, */
-          /* &:active { */
-          /*   color: $color-cyan; */
-          /* } */
+          &:hover,
+          &:active {
+            color: $color-cyan;
+          }
         }
       }
     }
