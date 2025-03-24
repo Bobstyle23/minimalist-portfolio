@@ -27,6 +27,11 @@
   &__footer {
     width: 2.4rem;
     height: 2.4rem;
+
+    &:hover {
+      cursor: pointer;
+      fill: $color-cyan;
+    }
   }
 
   &--black {

@@ -1,8 +1,10 @@
 .footer {
-  @extend %grid;
-  row-gap: 8rem;
+  &,
+  &__contact {
+    @extend %grid;
+    row-gap: 8rem;
+  }
 
-  &__contact,
   &__navigation,
   &__navigation-list,
   &__icons {
@@ -10,7 +12,7 @@
   }
 
   &__contact {
-    gap: 4rem;
+    row-gap: 4rem;
     padding-inline: 3.2rem;
     text-align: center;
   }
@@ -21,6 +23,26 @@
 
   &__line {
     display: none;
+  }
+
+  &__link {
+    a {
+      font-size: 1.2rem;
+      font-weight: 400;
+      font-family: PublicSans;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+
+      &:link,
+      &:visited {
+        color: $color-white;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-cyan;
+      }
+    }
   }
 
   &__navigation {
@@ -37,5 +59,45 @@
   &__icons {
     flex-flow: row nowrap;
     gap: 1.6rem;
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .footer {
+    row-gap: 9.6rem;
+
+    &__contact {
+      text-align: left;
+      grid-template-columns: repeat(3, auto);
+      row-gap: 0;
+      column-gap: 3.2rem;
+    }
+
+    &__line {
+      display: block;
+      width: 11.3rem;
+      height: 1px;
+      background-color: rgba($color: $color-grayish-blue, $alpha: 0.1);
+    }
+
+    &__navigation,
+    ul {
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+    }
+
+    &__navigation {
+      gap: 4.8rem;
+      padding-inline: 4rem;
+      padding-block: 2.4rem;
+    }
+
+    &__navigation-list {
+      gap: 4.2rem;
+    }
+
+    &__icons {
+      margin-left: auto;
+    }
   }
 }
