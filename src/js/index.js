@@ -3,6 +3,7 @@ const closeMenu = document.querySelector(".menu__btn--close");
 const navigation = document.querySelector(".navigation");
 const navigationListItems =
   document.querySelector(".navigation__list").children;
+const activePageLink = window.location.href.split("/").filter(Boolean);
 
 const toggleMenu = () => {
   openMenu.classList.toggle("hidden");
@@ -25,3 +26,5 @@ for (let menu of navigationListItems) {
     toggleMenu();
   });
 }
+
+console.log(activePageLink[activePageLink.length - 1]);

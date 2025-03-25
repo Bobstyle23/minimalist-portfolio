@@ -5,3 +5,7 @@
 .container {
   @include containerWidth(111rem);
 }
+
+.navigation__list--item a.active:visited {
+  color: $color-cyan;
+}

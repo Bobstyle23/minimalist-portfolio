@@ -2,7 +2,6 @@
   &,
   &__contact {
     @extend %grid;
-    row-gap: 8rem;
   }
 
   &__navigation,
@@ -17,6 +16,7 @@
     row-gap: 4rem;
     padding-inline: 3.2rem;
     text-align: center;
+    margin-block-end: 8rem;
   }
 
   &__title {
@@ -71,14 +71,13 @@
 
 @include respond-to($breakpoint-tablets) {
   .footer {
-    row-gap: 9.6rem;
-
     &__contact {
       text-align: left;
       grid-template-columns: auto 1fr auto;
       row-gap: 0;
       column-gap: 3.2rem;
       justify-self: stretch;
+      margin-block-end: 9.6rem;
     }
 
     &__line {
@@ -112,7 +111,11 @@
 
 @include respond-to($breakpoint-desktops) {
   .footer {
-    &__contact,
+    &__contact {
+      padding-inline: 0;
+      margin-block-end: 15rem;
+    }
+
     &__navigation {
       padding-inline: 0;
     }
