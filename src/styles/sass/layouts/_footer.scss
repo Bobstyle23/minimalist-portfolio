@@ -48,10 +48,14 @@
     }
   }
 
-  &__navigation {
-    gap: 4rem;
+  .navigation__wrapper {
     background-color: $color-grayish-blue;
     justify-self: stretch;
+  }
+
+  &__navigation {
+    @include containerWidth(111rem);
+    gap: 4rem;
     padding-block: 5.6rem;
 
     &-list {
@@ -108,7 +112,8 @@
 
 @include respond-to($breakpoint-desktops) {
   .footer {
-    &__contact {
+    &__contact,
+    &__navigation {
       padding-inline: 0;
     }
   }
