@@ -36,4 +36,60 @@
     @extend %body-2;
     color: rgba($color: $color-grayish-blue, $alpha: 0.8);
   }
+
+  &__link {
+    width: 17.5rem;
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .portfolio {
+    padding-inline: 4rem;
+    padding-block-start: 4.7rem;
+    margin-block-end: 9.6rem;
+  }
+
+  .projects {
+    row-gap: 8rem;
+  }
+
+  .project {
+    grid-template-columns: auto 1fr;
+    column-gap: 6.9rem;
+
+    &:nth-of-type(even) {
+      grid-template-columns: 1fr auto;
+    }
+
+    &:nth-of-type(even) &__info {
+      order: -1;
+    }
+
+    &__info {
+      padding-block-start: 3.2rem;
+      padding-block-end: 5rem;
+    }
+
+    &__title {
+      margin-block-end: 0.5rem;
+    }
+
+    &__description {
+      margin-block-end: 1.1rem;
+    }
+  }
+}
+
+@include respond-to($breakpoint-large-tablets) {
+  .projects {
+    row-gap: 9.6rem;
+  }
+
+  .project {
+    column-gap: 9.6rem;
+    &,
+    &:nth-of-type(even) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }
