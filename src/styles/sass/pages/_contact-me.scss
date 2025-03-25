@@ -4,11 +4,16 @@
   padding-inline: 3.2rem;
   margin-block-end: 8rem;
 
-  &__info {
+  &__info,
+  &__form {
     @extend %grid;
-    place-items: start;
+    place-items: stretch;
     justify-self: stretch;
     row-gap: 2.4rem;
+  }
+
+  &__info {
+    place-items: start;
     padding-block-start: 2.4rem;
     padding-block-end: 3.2rem;
     border-top: 1px solid rgba($color: $color-grayish-blue, $alpha: 0.15);
@@ -31,13 +36,6 @@
     gap: 1.5rem;
   }
 
-  &__form {
-    @extend %grid;
-    place-items: stretch;
-    justify-self: stretch;
-    row-gap: 2.4rem;
-  }
-
   .form {
     &__title {
       @extend %heading-2;
@@ -50,6 +48,10 @@
 
     &__btn {
       border: none;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
@@ -72,6 +74,43 @@
   .form {
     &__title {
       margin-block-end: 0.8rem;
+    }
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .contact {
+    padding-inline: 0;
+    margin-block-end: 10.9rem;
+    row-gap: 4.8rem;
+
+    &__info,
+    &__form {
+      grid-template-columns: auto 1fr;
+      column-gap: 12.5rem;
+    }
+
+    &__title {
+      width: 35rem;
+    }
+
+    &__info {
+      padding-block: 4.8rem;
+    }
+
+    &__icons {
+      grid-column: 2;
+    }
+  }
+
+  .form {
+    &__title {
+      width: 35rem;
+    }
+
+    section,
+    &__btn {
+      grid-column: 2;
     }
   }
 }
