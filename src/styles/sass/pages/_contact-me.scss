@@ -7,6 +7,7 @@
   &__info {
     @extend %grid;
     place-items: start;
+    justify-self: stretch;
     row-gap: 2.4rem;
     padding-block-start: 2.4rem;
     padding-block-end: 3.2rem;
@@ -49,6 +50,28 @@
 
     &__btn {
       border: none;
+    }
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .contact {
+    padding-inline: 4rem;
+    padding-block-start: 4.7rem;
+    margin-block-end: 9.6rem;
+
+    &__info {
+      padding-block-start: 3.2rem;
+    }
+
+    &__description {
+      max-width: none;
+    }
+  }
+
+  .form {
+    &__title {
+      margin-block-end: 0.8rem;
     }
   }
 }
