@@ -23,6 +23,7 @@ body {
   font-weight: 700;
   font-family: "IbarraRealNova";
   @include containerWidth(144rem);
+  background-color: $color-very-grey;
 }
 
 h1,
