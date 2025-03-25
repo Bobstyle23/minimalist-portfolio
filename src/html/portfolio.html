@@ -7,7 +7,163 @@
     <link href="./css/main.css" rel="stylesheet" />
   </head>
   <body>
-    @@include("./header.html") @@include("./footer-contact.html")
+    <main>
+      @@include("./header.html")
+      <section class="portfolio projects">
+        <article class="project">
+          <picture class="project__image">
+            <source
+              srcset="
+                ./img/portfolio/desktop/image-portfolio-manage.webp,
+                ./img/portfolio/desktop/image-portfolio-manage@2x.webp 2x
+              "
+              media="(min-width: 64em)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./img/portfolio/tablet/image-portfolio-manage.webp,
+                ./img/portfolio/tablet/image-portfolio-manage@2x.webp 2x
+              "
+              media="(min-width: 48em)"
+              type="image/webp"
+            />
+            <img
+              src="./img/portfolio/mobile/image-portfolio-manage.webp"
+              srcset="./img/portfolio/mobile/image-portfolio-manage@2x.webp 2x"
+              alt="Hero section of manage project in iMac monitor"
+            />
+          </picture>
+          <div class="project__info">
+            <h2 class="project__title">Manage</h2>
+            <p class="project__description">
+              This project required me to build a fully responsive landing page
+              to the designs provided. I used HTML5, along with CSS Grid and
+              JavaScript for the areas that required interactivity, such as the
+              testimonial slider.
+            </p>
+            <a href="#" class="btn btn__secondary project__link"
+              >View project</a
+            >
+          </div>
+        </article>
+        <article class="project">
+          <picture class="project__image">
+            <source
+              srcset="
+                ./img/portfolio/desktop/image-portfolio-bookmark.webp,
+                ./img/portfolio/desktop/image-portfolio-bookmark@2x.webp 2x
+              "
+              media="(min-width: 64em)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./img/portfolio/tablet/image-portfolio-bookmark.webp,
+                ./img/portfolio/tablet/image-portfolio-bookmark@2x.webp 2x
+              "
+              media="(min-width: 48em)"
+              type="image/webp"
+            />
+            <img
+              src="./img/portfolio/mobile/image-portfolio-bookmark.webp"
+              srcset="
+                ./img/portfolio/mobile/image-portfolio-bookmark@2x.webp 2x
+              "
+              alt="Hero section of manage project in iMac monitor"
+            />
+          </picture>
+          <div class="project__info">
+            <h2 class="project__title">Bookmark</h2>
+            <p class="project__description">
+              This project required me to build a fully responsive landing page
+              to the designs provided. I used HTML5, along with CSS Grid and
+              JavaScript for the areas that required interactivity, such as the
+              features section.
+            </p>
+            <a href="#" class="btn btn__secondary project__link"
+              >View project</a
+            >
+          </div>
+        </article>
+        <article class="project">
+          <picture class="project__image">
+            <source
+              srcset="
+                ./img/portfolio/desktop/image-portfolio-insure.webp,
+                ./img/portfolio/desktop/image-portfolio-insure@2x.webp 2x
+              "
+              media="(min-width: 64em)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./img/portfolio/tablet/image-portfolio-insure.webp,
+                ./img/portfolio/tablet/image-portfolio-insure@2x.webp 2x
+              "
+              media="(min-width: 48em)"
+              type="image/webp"
+            />
+            <img
+              src="./img/portfolio/mobile/image-portfolio-insure.webp"
+              srcset="./img/portfolio/mobile/image-portfolio-insure@2x.webp 2x"
+              alt="Hero section of manage project in iMac monitor"
+            />
+          </picture>
+          <div class="project__info">
+            <h2 class="project__title">Insure</h2>
+            <p class="project__description">
+              This was a small project which mostly consisted of HTML and CSS. I
+              built a fully-responsive landing page. The only JavaScript this
+              project required was to enable the toggling of the mobile
+              navigation.
+            </p>
+            <a href="#" class="btn btn__secondary project__link"
+              >View project</a
+            >
+          </div>
+        </article>
+        <article class="project">
+          <picture class="project__image">
+            <source
+              srcset="
+                ./img/portfolio/desktop/image-portfolio-fylo.webp,
+                ./img/portfolio/desktop/image-portfolio-fylo@2x.webp 2x
+              "
+              media="(min-width: 64em)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./img/portfolio/tablet/image-portfolio-fylo.webp,
+                ./img/portfolio/tablet/image-portfolio-fylo@2x.webp 2x
+              "
+              media="(min-width: 48em)"
+              type="image/webp"
+            />
+            <img
+              src="./img/portfolio/mobile/image-portfolio-fylo.webp"
+              srcset="./img/portfolio/mobile/image-portfolio-fylo@2x.webp 2x"
+              alt="Hero section of manage project in iMac monitor"
+            />
+          </picture>
+          <div class="project__info">
+            <h2 class="project__title">Fylo</h2>
+            <p class="project__description">
+              This project was built in pure HTML and CSS. I had mobile and
+              desktop designs to work to and built it so that it was
+              fully-responsive. I took a mobile-first approach and used modern
+              CSS like Flexbox and Grid for layout purposes.
+            </p>
+            <a href="#" class="btn btn__secondary project__link"
+              >View project</a
+            >
+          </div>
+        </article>
+      </section>
+      @@include("./footer-contact.html")
+    </main>
+
     @@include("./footer.html")
     <script src="./js/index.bundle.js"></script>
   </body>

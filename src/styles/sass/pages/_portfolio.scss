@@ -1,0 +1,39 @@
+.portfolio {
+  padding-inline: 3.2rem;
+  margin-block-end: 8rem;
+}
+
+.projects {
+  @extend %grid;
+  row-gap: 7.2rem;
+}
+
+.project {
+  @extend %grid;
+  row-gap: 3.2rem;
+
+  &__image,
+  &__image img {
+    width: 100%;
+    max-width: none;
+  }
+
+  &__info {
+    @extend %flexbox;
+    align-items: flex-start;
+    gap: 2.4rem;
+    border-top: 1px solid rgba($color: $color-grayish-blue, $alpha: 0.15);
+    border-bottom: 1px solid rgba($color: $color-grayish-blue, $alpha: 0.15);
+    padding-block: 2.4rem;
+  }
+
+  &__title {
+    @extend %heading-2;
+    color: $color-grayish-blue;
+  }
+
+  &__description {
+    @extend %body-2;
+    color: rgba($color: $color-grayish-blue, $alpha: 0.8);
+  }
+}
