@@ -7,7 +7,8 @@
     <link href="./css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
+    <main>
+      <header class="header">
   <a href="./index.html">
     <svg class="icon icon__logo icon--black">
       <use href="./img/svgsprite/sprite.symbol.svg#logo" />
@@ -37,11 +38,86 @@
     </svg>
   </button>
 </header>
- <section class="footer__contact">
+
+      <div class="project__details">
+        <section class="detail">
+          <picture class="detail__image">
+            <source
+              class="detail__image--desktop"
+              type="image/webp"
+              media="(min-width: 75em)"
+            />
+            <source
+              class="detail__image--tablet"
+              type="image/webp"
+              media="(min-width: 48em)"
+            />
+            <img class="detail__image--mobile" alt="" />
+          </picture>
+          <article class="detail__info">
+            <h2 class="detail__title"></h2>
+            <p class="detail__description"></p>
+            <div class="detail__specs">
+              <small class="detail__specs--web"
+                >Interaction Design / Front End Development</small
+              >
+              <small class="detail__specs--tech">HTML / CSS / JS</small>
+            </div>
+            <a class="btn btn__secondary detail__link">View Website</a>
+          </article>
+        </section>
+
+        <section class="background">
+          <h3 class="background__title">Project Background</h3>
+          <p class="background__description">
+            This project was a&#160;front-end challenge from Frontend Mentor. It&#8217;s a
+            platform that enables you to&#160;practice building websites to&#160;a&#160;design
+            and project brief. Each challenge includes mobile and desktop
+            designs to&#160;show how the website should look at&#160;different screen
+            sizes. Creating these projects has helped me&#160;refine my&#160;workflow and
+            solve real-world coding problems. I&#8217;ve learned something new with
+            each project, helping me&#160;to&#160;improve and adapt my&#160;style.
+          </p>
+        </section>
+
+        <section class="preview">
+          <picture class="preview__image--first">
+            <source
+              class="preview__image-first--desktop"
+              type="image/webp"
+              media="(min-width: 75em)"
+            />
+            <source
+              class="preview__image-first--tablet"
+              type="image/webp"
+              media="(min-width: 48em)"
+            />
+            <img class="preview__image-first--mobile" src="" srcset="" alt="" />
+          </picture>
+
+          <picture class="preview__image--second">
+            <source
+              class="preview__image-second--desktop"
+              type="image/webp"
+              media="(min-width: 75em)"
+            />
+            <source
+              class="preview__image-second--tablet"
+              type="image/webp"
+              media="(min-width: 48em)"
+            />
+            <img class="preview__image-second--mobile" alt="" />
+          </picture>
+        </section>
+      </div>
+
+      <section class="footer__contact">
   <h2 class="footer__title">Interested in&#160;doing a&#160;project together?</h2>
   <div class="footer__line"></div>
   <a href="./contact-me.html" class="btn btn__secondary">Contact Me</a>
 </section>
+
+    </main>
 
     <footer class="footer">
   <div class="navigation__wrapper">

@@ -7,7 +7,83 @@
     <link href="./css/main.css" rel="stylesheet" />
   </head>
   <body>
-    @@include("./header.html") @@include("./footer-contact.html")
+    <main>
+      @@include("./header.html")
+      <div class="project__details">
+        <section class="detail">
+          <picture class="detail__image">
+            <source
+              class="detail__image--desktop"
+              type="image/webp"
+              media="(min-width: 75em)"
+            />
+            <source
+              class="detail__image--tablet"
+              type="image/webp"
+              media="(min-width: 48em)"
+            />
+            <img class="detail__image--mobile" alt="" />
+          </picture>
+          <article class="detail__info">
+            <h2 class="detail__title"></h2>
+            <p class="detail__description"></p>
+            <div class="detail__specs">
+              <small class="detail__specs--web"
+                >Interaction Design / Front End Development</small
+              >
+              <small class="detail__specs--tech">HTML / CSS / JS</small>
+            </div>
+            <a class="btn btn__secondary detail__link">View Website</a>
+          </article>
+        </section>
+
+        <section class="background">
+          <h3 class="background__title">Project Background</h3>
+          <p class="background__description">
+            This project was a front-end challenge from Frontend Mentor. It’s a
+            platform that enables you to practice building websites to a design
+            and project brief. Each challenge includes mobile and desktop
+            designs to show how the website should look at different screen
+            sizes. Creating these projects has helped me refine my workflow and
+            solve real-world coding problems. I’ve learned something new with
+            each project, helping me to improve and adapt my style.
+          </p>
+        </section>
+
+        <section class="preview">
+          <picture class="preview__image--first">
+            <source
+              class="preview__image-first--desktop"
+              type="image/webp"
+              media="(min-width: 75em)"
+            />
+            <source
+              class="preview__image-first--tablet"
+              type="image/webp"
+              media="(min-width: 48em)"
+            />
+            <img class="preview__image-first--mobile" src="" srcset="" alt="" />
+          </picture>
+
+          <picture class="preview__image--second">
+            <source
+              class="preview__image-second--desktop"
+              type="image/webp"
+              media="(min-width: 75em)"
+            />
+            <source
+              class="preview__image-second--tablet"
+              type="image/webp"
+              media="(min-width: 48em)"
+            />
+            <img class="preview__image-second--mobile" alt="" />
+          </picture>
+        </section>
+      </div>
+
+      @@include("./footer-contact.html")
+    </main>
+
     @@include("./footer.html")
     <script src="./js/index.bundle.js"></script>
   </body>
