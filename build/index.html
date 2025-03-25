@@ -7,7 +7,8 @@
     <title>Minimalist Portfolio</title>
   </head>
   <body>
-    <header class="header">
+    <main>
+      <header class="header">
   <a href="./index.html">
     <svg class="icon icon__logo icon--black">
       <use href="./img/svgsprite/sprite.symbol.svg#logo" />
@@ -38,25 +39,97 @@
   </button>
 </header>
 
-    <!-- <button type="button" class="btn btn__primary"> -->
-    <!--   <span class="btn__icon"> -->
-    <!--     <svg class="icon icon__arrows icon__arrows--green"> -->
-    <!--       <use href="./img/svgsprite/sprite.symbol.svg#down-arrows" /> -->
-    <!--     </svg> -->
-    <!--   </span> -->
-    <!--   <span class="btn__text">Contact Me</span> -->
-    <!-- </button> -->
-    <!---->
-    <!-- <button type="button" class="btn btn__secondary"> -->
-    <!--   <span class="btn__text">Contact Me</span> -->
-    <!-- </button> -->
+      <section class="hero container">
+        <picture class="hero__image">
+          <source
+            srcset="
+              ./img/homepage/desktop/image-homepage-hero.webp,
+              ./img/homepage/desktop/image-homepage-hero@2x.webp 2x
+            "
+            media="(min-width: 64em)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./img/homepage/tablet/image-homepage-hero.webp,
+              ./img/homepage/tablet/image-homepage-hero@2x.webp 2x
+            "
+            media="(min-width: 48em)"
+            type="image/webp"
+          />
+          <img
+            src="./img/homepage/mobile/image-homepage-hero.webp"
+            srcset="./img/homepage/mobile/image-homepage-hero@2x.webp 2x"
+            alt="Hero section of manage project in iMac monitor"
+          />
+        </picture>
 
-    <section class="footer__contact">
+        <article class="hero__info">
+          <h1 class="hero__title">
+            Hey, I&#8217;m Alex Spencer and I&#160;love building beautiful websites
+          </h1>
+          <a href="#" class="btn btn__primary">
+            <span class="btn__icon">
+              <svg class="icon icon__arrows icon__arrows--green">
+                <use href="./img/svgsprite/sprite.symbol.svg#down-arrows" />
+              </svg>
+            </span>
+            <span class="btn__text">About Me</span>
+          </a>
+        </article>
+      </section>
+
+      <section class="biography container">
+        <picture class="biography__image">
+          <source
+            srcset="
+              ./img/homepage/desktop/image-homepage-profile.webp,
+              ./img/homepage/desktop/image-homepage-profile@2x.webp 2x
+            "
+            media="(min-width: 64em)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./img/homepage/tablet/image-homepage-profile.webp,
+              ./img/homepage/tablet/image-homepage-profile@2x.webp 2x
+            "
+            media="(min-width: 48em)"
+            type="image/webp"
+          />
+          <img
+            src="./img/homepage/mobile/image-homepage-profile.webp"
+            srcset="./img/homepage/mobile/image-homepage-profile@2x.webp 2x"
+            alt="Hero section of manage project in iMac monitor"
+          />
+        </picture>
+        <article class="biography__info">
+          <h2 class="biography__title">About Me</h2>
+          <p class="biography__description">
+            I&#8217;m a&#160;junior front-end developer looking for a&#160;new role in&#160;an
+            exciting company. I&#160;focus on&#160;writing accessible HTML, using modern
+            CSS practices and writing clean JavaScript. When writing JavaScript
+            code, I&#160;mostly use React, but I&#160;can adapt to&#160;whatever tools are
+            required. I&#8217;m based in&#160;London, UK, but I&#8217;m happy working remotely
+            and have experience in&#160;remote teams. When I&#8217;m not coding, you&#8217;ll
+            find me&#160;outdoors. I&#160;love being out in&#160;nature whether that&#8217;s going
+            for a&#160;walk, run or&#160;cycling. I&#8217;d love you to&#160;check out my&#160;work.
+          </p>
+          <a href="./portfolio.html" class="btn btn__secondary biography__link"
+            >Go&#160;to&#160;portfolio</a
+          >
+        </article>
+      </section>
+
+      <section class="footer__contact">
   <h2 class="footer__title">Interested in&#160;doing a&#160;project together?</h2>
   <div class="footer__line"></div>
   <a href="./contact-me.html" class="btn btn__secondary">Contact Me</a>
 </section>
- <footer class="footer">
+
+    </main>
+
+    <footer class="footer">
   <div class="navigation__wrapper">
     <nav class="footer__navigation">
       <a class="footer__logo" href="./index.html">

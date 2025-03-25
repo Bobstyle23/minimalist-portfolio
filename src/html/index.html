@@ -7,21 +7,94 @@
     <title>Minimalist Portfolio</title>
   </head>
   <body>
-    @@include("./header.html")
-    <!-- <button type="button" class="btn btn__primary"> -->
-    <!--   <span class="btn__icon"> -->
-    <!--     <svg class="icon icon__arrows icon__arrows--green"> -->
-    <!--       <use href="./img/svgsprite/sprite.symbol.svg#down-arrows" /> -->
-    <!--     </svg> -->
-    <!--   </span> -->
-    <!--   <span class="btn__text">Contact Me</span> -->
-    <!-- </button> -->
-    <!---->
-    <!-- <button type="button" class="btn btn__secondary"> -->
-    <!--   <span class="btn__text">Contact Me</span> -->
-    <!-- </button> -->
+    <main>
+      @@include("./header.html")
+      <section class="hero container">
+        <picture class="hero__image">
+          <source
+            srcset="
+              ./img/homepage/desktop/image-homepage-hero.webp,
+              ./img/homepage/desktop/image-homepage-hero@2x.webp 2x
+            "
+            media="(min-width: 64em)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./img/homepage/tablet/image-homepage-hero.webp,
+              ./img/homepage/tablet/image-homepage-hero@2x.webp 2x
+            "
+            media="(min-width: 48em)"
+            type="image/webp"
+          />
+          <img
+            src="./img/homepage/mobile/image-homepage-hero.webp"
+            srcset="./img/homepage/mobile/image-homepage-hero@2x.webp 2x"
+            alt="Hero section of manage project in iMac monitor"
+          />
+        </picture>
 
-    @@include("./footer-contact.html") @@include("./footer.html")
+        <article class="hero__info">
+          <h1 class="hero__title">
+            Hey, I’m Alex Spencer and I love building beautiful websites
+          </h1>
+          <a href="#" class="btn btn__primary">
+            <span class="btn__icon">
+              <svg class="icon icon__arrows icon__arrows--green">
+                <use href="./img/svgsprite/sprite.symbol.svg#down-arrows" />
+              </svg>
+            </span>
+            <span class="btn__text">About Me</span>
+          </a>
+        </article>
+      </section>
+
+      <section class="biography container">
+        <picture class="biography__image">
+          <source
+            srcset="
+              ./img/homepage/desktop/image-homepage-profile.webp,
+              ./img/homepage/desktop/image-homepage-profile@2x.webp 2x
+            "
+            media="(min-width: 64em)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./img/homepage/tablet/image-homepage-profile.webp,
+              ./img/homepage/tablet/image-homepage-profile@2x.webp 2x
+            "
+            media="(min-width: 48em)"
+            type="image/webp"
+          />
+          <img
+            src="./img/homepage/mobile/image-homepage-profile.webp"
+            srcset="./img/homepage/mobile/image-homepage-profile@2x.webp 2x"
+            alt="Hero section of manage project in iMac monitor"
+          />
+        </picture>
+        <article class="biography__info">
+          <h2 class="biography__title">About Me</h2>
+          <p class="biography__description">
+            I’m a junior front-end developer looking for a new role in an
+            exciting company. I focus on writing accessible HTML, using modern
+            CSS practices and writing clean JavaScript. When writing JavaScript
+            code, I mostly use React, but I can adapt to whatever tools are
+            required. I’m based in London, UK, but I’m happy working remotely
+            and have experience in remote teams. When I’m not coding, you’ll
+            find me outdoors. I love being out in nature whether that’s going
+            for a walk, run or cycling. I’d love you to check out my work.
+          </p>
+          <a href="./portfolio.html" class="btn btn__secondary biography__link"
+            >Go to portfolio</a
+          >
+        </article>
+      </section>
+
+      @@include("./footer-contact.html")
+    </main>
+
+    @@include("./footer.html")
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>

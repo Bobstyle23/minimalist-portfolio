@@ -12,10 +12,10 @@
 
 %body-1 {
   @include typography(1.6rem, 400, calc(3 / 1.6));
-  font-family: PublincSans;
+  font-family: PublicSans;
 }
 
 %body-2 {
   @include typography(1.5rem, 400, calc(3 / 1.5));
-  font-family: PublincSans;
+  font-family: PublicSans;
 }
