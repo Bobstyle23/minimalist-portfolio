@@ -1,0 +1,54 @@
+.contact {
+  @extend %grid;
+  row-gap: 3.2rem;
+  padding-inline: 3.2rem;
+  margin-block-end: 8rem;
+
+  &__info {
+    @extend %grid;
+    place-items: start;
+    row-gap: 2.4rem;
+    padding-block-start: 2.4rem;
+    padding-block-end: 3.2rem;
+    border-top: 1px solid rgba($color: $color-grayish-blue, $alpha: 0.15);
+    border-bottom: 1px solid rgba($color: $color-grayish-blue, $alpha: 0.15);
+  }
+
+  &__title {
+    @extend %heading-2;
+    color: $color-grayish-blue;
+  }
+
+  &__description {
+    @extend %body-2;
+    color: rgba($color: $color-grayish-blue, $alpha: 0.8);
+  }
+
+  &__icons {
+    @extend %flexbox;
+    flex-flow: row nowrap;
+    gap: 1.5rem;
+  }
+
+  &__form {
+    @extend %grid;
+    place-items: stretch;
+    justify-self: stretch;
+    row-gap: 2.4rem;
+  }
+
+  .form {
+    &__title {
+      @extend %heading-2;
+      color: $color-grayish-blue;
+    }
+
+    &__textarea {
+      height: 9.6rem;
+    }
+
+    &__btn {
+      border: none;
+    }
+  }
+}

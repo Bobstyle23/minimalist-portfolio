@@ -7,7 +7,84 @@
     <link href="./css/main.css" rel="stylesheet" />
   </head>
   <body>
-    @@include("./header.html") @@include("./footer.html")
+    <main>
+      @@include("./header.html")
+      <div class="contact">
+        <section class="contact__info">
+          <h2 class="contact__title">Get in Touch</h2>
+          <p class="contact__description">
+            I’d love to hear about what you’re working on and how I could help.
+            I’m currently looking for a new role and am open to a wide range of
+            opportunities. My preference would be to find a position in a
+            company in London. But I’m also happy to hear about opportunites
+            that don’t fit that description. I’m a hard-working and positive
+            person who will always approach each task with a sense of purpose
+            and attention to detail. Please do feel free to check out my online
+            profiles below and get in touch using the form.
+          </p>
+          <div class="contact__icons">
+            <a href="#">
+              <svg class="icon icon__footer icon--black">
+                <use href="./img/svgsprite/sprite.symbol.svg#github" />
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg class="icon icon__footer icon--black">
+                <use href="./img/svgsprite/sprite.symbol.svg#twitter" />
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg class="icon icon__footer icon--black">
+                <use href="./img/svgsprite/sprite.symbol.svg#linkedin" />
+              </svg>
+            </a>
+          </div>
+        </section>
+        <form class="contact__form form">
+          <h2 class="form__title">Contact Me</h2>
+          <section class="form__name">
+            <label class="form__label label" for="name">Name</label>
+            <input
+              class="form__input input"
+              type="text"
+              name="name"
+              placeholder="Jane Appleseed"
+            />
+          </section>
+
+          <section class="form__email">
+            <label class="form__label label" for="email">Email Address</label>
+            <input
+              class="form__input input"
+              type="email"
+              name="name"
+              placeholder="email@example.com"
+            />
+          </section>
+
+          <section class="form__message">
+            <label class="form__label label" for="message">Message</label>
+            <textarea
+              class="textarea form__textarea"
+              rows=""
+              cols=""
+              placeholder="How can I help?"
+            ></textarea>
+          </section>
+
+          <input
+            class="btn btn__primary form__btn"
+            type="submit"
+            name="send-message"
+            value="Send Message"
+          />
+        </form>
+      </div>
+    </main>
+
+    @@include("./footer.html")
 
     <script src="./js/index.bundle.js"></script>
   </body>
