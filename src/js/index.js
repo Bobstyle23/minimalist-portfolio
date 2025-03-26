@@ -3,7 +3,7 @@ const closeMenu = document.querySelector(".menu__btn--close");
 const navigation = document.querySelector(".navigation");
 const navigationListItems =
   document.querySelector(".navigation__list").children;
-const activePageLink = window.location.href.split("/").filter(Boolean);
+const navLinks = document.querySelectorAll(".navigation__list--item a");
 
 const toggleMenu = () => {
   openMenu.classList.toggle("hidden");
@@ -26,6 +26,25 @@ for (let menu of navigationListItems) {
     toggleMenu();
   });
 }
+
+// PERF: highlight active page
+let currentPath = window.location.pathname
+  .split("/")
+  .filter(Boolean)
+  .toString()
+  .split(".")[0];
+
+navLinks.forEach((link) => {
+  let linkName = link
+    .getAttribute("href")
+    .split("./")
+    .filter(Boolean)
+    .toString()
+    .split(".")[0];
+  if (linkName === currentPath) {
+    link.classList.add("active");
+  }
+});
 
 // NOTE: projects
 const projects = {
@@ -248,16 +267,13 @@ const projectId = urlParams.get("id");
 const projectTitle = document.querySelector(".detail__title");
 const projectDescription = document.querySelector(".detail__description");
 const projectLink = document.querySelector(".detail__link");
-const projectHeroImages = document.querySelector(".detail__image").children;
+const projectHeroImages = document.querySelector(".detail__image")?.children;
 const projectPreviewImages1 = document.querySelector(
   ".preview__image--first",
-).children;
+)?.children;
 const projectPreviewImages2 = document.querySelector(
   ".preview__image--second",
-).children;
-
-// WARN: active page link name
-// console.log(activePageLink[activePageLink.length - 1]);
+)?.children;
 
 if (projectId && projects[projectId]) {
   const project = projects[projectId];
