@@ -79,7 +79,7 @@ const projects = {
     title: "Manage",
     description:
       "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.",
-    link: "manage@manage.com" /* NOTE: link to the actual live website */,
+    link: "https://bobstyle23.github.io/photosnap-website/" /* NOTE: link to the actual live website */,
   },
   bookmark: {
     heroImages: {
@@ -248,7 +248,7 @@ const projectId = urlParams.get("id");
 const projectTitle = document.querySelector(".detail__title");
 const projectDescription = document.querySelector(".detail__description");
 const projectLink = document.querySelector(".detail__link");
-const projectHeroImages = document.querySelector(".detail__image").children;
+const projectHeroImages = document.querySelector(".project__image").children;
 const projectPreviewImages1 = document.querySelector(
   ".preview__image--first",
 ).children;
@@ -326,7 +326,7 @@ if (projectId && projects[projectId]) {
 
     let previewImage = previewImagesArray.find(
       (img) => `${img.type}` === previewType,
-    )[`${previewSequence}`];
+    )[previewSequence];
 
     previews.srcset = `${previewImage.normal}, ${previewImage.retina} 2x`;
   }

@@ -40,20 +40,21 @@
 </header>
 
       <div class="project__details">
+        <picture class="project__image">
+          <source
+            class="project__image--desktop"
+            type="image/webp"
+            media="(min-width: 75em)"
+          />
+          <source
+            class="project__image--tablet"
+            type="image/webp"
+            media="(min-width: 48em)"
+          />
+          <img class="project__image--mobile" alt="" />
+        </picture>
+
         <section class="detail">
-          <picture class="detail__image">
-            <source
-              class="detail__image--desktop"
-              type="image/webp"
-              media="(min-width: 75em)"
-            />
-            <source
-              class="detail__image--tablet"
-              type="image/webp"
-              media="(min-width: 48em)"
-            />
-            <img class="detail__image--mobile" alt="" />
-          </picture>
           <article class="detail__info">
             <h2 class="detail__title"></h2>
             <p class="detail__description"></p>
@@ -81,33 +82,41 @@
         </section>
 
         <section class="preview">
-          <picture class="preview__image--first">
-            <source
-              class="preview__image-first--desktop"
-              type="image/webp"
-              media="(min-width: 75em)"
-            />
-            <source
-              class="preview__image-first--tablet"
-              type="image/webp"
-              media="(min-width: 48em)"
-            />
-            <img class="preview__image-first--mobile" src="" srcset="" alt="" />
-          </picture>
+          <h3 class="preview__title">Static Previews</h3>
+          <div class="preview__images">
+            <picture class="preview__image--first">
+              <source
+                class="preview__image-first--desktop"
+                type="image/webp"
+                media="(min-width: 75em)"
+              />
+              <source
+                class="preview__image-first--tablet"
+                type="image/webp"
+                media="(min-width: 48em)"
+              />
+              <img
+                class="preview__image-first--mobile"
+                src=""
+                srcset=""
+                alt=""
+              />
+            </picture>
 
-          <picture class="preview__image--second">
-            <source
-              class="preview__image-second--desktop"
-              type="image/webp"
-              media="(min-width: 75em)"
-            />
-            <source
-              class="preview__image-second--tablet"
-              type="image/webp"
-              media="(min-width: 48em)"
-            />
-            <img class="preview__image-second--mobile" alt="" />
-          </picture>
+            <picture class="preview__image--second">
+              <source
+                class="preview__image-second--desktop"
+                type="image/webp"
+                media="(min-width: 75em)"
+              />
+              <source
+                class="preview__image-second--tablet"
+                type="image/webp"
+                media="(min-width: 48em)"
+              />
+              <img class="preview__image-second--mobile" alt="" />
+            </picture>
+          </div>
         </section>
       </div>
 

@@ -1,0 +1,79 @@
+.project__details {
+  padding-inline: 3.2rem;
+  margin-block-end: 6.4rem;
+
+  picture,
+  img {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.project__image {
+  margin-block-end: 4rem;
+}
+
+.detail {
+  &__info {
+    @extend %flexbox;
+    align-items: flex-start;
+    gap: 2.4rem;
+    padding-block: 2.4rem;
+    margin-block-end: 4.8rem;
+    border-top: 1px solid rgba($color: $color-grayish-blue, $alpha: 0.15);
+    border-bottom: 1px solid rgba($color: $color-grayish-blue, $alpha: 0.15);
+  }
+
+  &__title {
+    @extend %heading-2;
+    color: $color-grayish-blue;
+  }
+
+  &__description {
+    @extend %body-2;
+    color: rgba($color: $color-grayish-blue, $alpha: 0.8);
+  }
+
+  &__specs {
+    small {
+      display: block;
+      font-size: 1.3rem;
+      font-family: PublicSans;
+      font-weight: 700;
+      line-height: lineHeight(1.3, 3);
+      color: $color-cyan;
+    }
+  }
+}
+
+.background {
+  @extend %flexbox;
+  align-items: flex-start;
+  gap: 2.8rem;
+  margin-block-end: 4rem;
+
+  &__title {
+    @extend %heading-3;
+    color: $color-grayish-blue;
+    line-height: lineHeight(3.2, 4.2);
+  }
+
+  &__description {
+    @extend %body-2;
+    color: rgba($color: $color-grayish-blue, $alpha: 0.8);
+  }
+}
+
+.preview {
+  &__title {
+    @extend %heading-3;
+    color: $color-grayish-blue;
+    line-height: lineHeight(3.2, 4.2);
+    margin-block-end: 4rem;
+  }
+
+  &__images {
+    @extend %flexbox;
+    gap: 3.2rem;
+  }
+}
