@@ -11,7 +11,7 @@
     width: 100%;
     padding-block: 2.4rem;
     row-gap: 1.6rem;
-    cursor: pointer;
+    transition: all 0.3s ease;
 
     &:nth-of-type(1) {
       border-top: 1px solid rgba($color: $color-grayish-blue, $alpha: 0.15);
@@ -55,6 +55,25 @@
       grid-template-columns: max-content 1fr;
       column-gap: 3.2rem;
 
+      &:hover {
+        &:nth-of-type(1) {
+          padding-inline-start: 2.4rem;
+        }
+
+        &:nth-of-type(2) {
+          padding-inline-end: 2.4rem;
+        }
+
+        cursor: pointer;
+        transform: scale(1.05);
+        background-color: $color-dark-blue;
+
+        * {
+          color: $color-very-grey;
+          stroke: $color-very-grey;
+        }
+      }
+
       svg {
         align-self: center;
         grid-row: 1 / span 3;
@@ -73,5 +92,12 @@
         }
       }
     }
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .swiper {
+    padding-inline: 0;
+    margin-block-end: 11.5rem;
   }
 }
