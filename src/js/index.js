@@ -27,11 +27,17 @@ for (let menu of navigationListItems) {
   });
 }
 
-// PERF: highlight active page
+// WARN: highlight active page (DEV)
+// let currentPath = window.location.pathname
+//   .split("/")
+//   .filter(Boolean)
+//   .toString()
+//   .split(".")[0];
+
+// PERF: highlight active page (PROD)
 let currentPath = window.location.pathname
   .split("/")
-  .filter(Boolean)
-  .toString()
+  .filter(Boolean)[1]
   .split(".")[0];
 
 navLinks.forEach((link) => {
