@@ -331,3 +331,59 @@ if (projectId && projects[projectId]) {
     previews.srcset = `${previewImage.normal}, ${previewImage.retina} 2x`;
   }
 }
+
+// NOTE: project navigator
+const prevProject = document.querySelector(".swiper__left");
+const nextProject = document.querySelector(".swiper__right");
+const prevProjectTitle = document.querySelector(".prev-project");
+const nextProjectTitle = document.querySelector(".next-project");
+
+const projectsList = [
+  {
+    title: "Manage",
+    id: "manage",
+  },
+  {
+    title: "Bookmark",
+    id: "bookmark",
+  },
+  {
+    title: "Insure",
+    id: "insure",
+  },
+  {
+    title: "Fylo",
+    id: "fylo",
+  },
+];
+
+function getProjects(currentId) {
+  const index = projectsList.findIndex((project) => project.id === currentId);
+  if (index === -1) return;
+  const prevIdx = (index - 1 + projectsList.length) % projectsList.length;
+  const nextIdx = (index + 1) % projectsList.length;
+
+  return {
+    prev: {
+      title: projectsList[prevIdx].title,
+      id: projectsList[prevIdx].id,
+    },
+    next: {
+      title: projectsList[nextIdx].title,
+      id: projectsList[nextIdx].id,
+    },
+  };
+}
+
+prevProjectTitle.textContent = getProjects(projectId).prev.title;
+nextProjectTitle.textContent = getProjects(projectId).next.title;
+
+let currentLocation = window.location.href.split("?")[0];
+
+prevProject.addEventListener("click", () => {
+  window.location = `${currentLocation}?id=${getProjects(projectId).prev.id}`;
+});
+
+nextProject.addEventListener("click", () => {
+  window.location = `${currentLocation}?id=${getProjects(projectId).next.id}`;
+});

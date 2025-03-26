@@ -34,6 +34,13 @@
     }
   }
 
+  &__chevron {
+    width: 0.8rem;
+    height: 1.6rem;
+    fill: transparent;
+    stroke: $color-grayish-blue;
+  }
+
   &--black {
     fill: $color-grayish-blue;
   }
