@@ -40,6 +40,8 @@ let currentPath = window.location.pathname
   .filter(Boolean)[1]
   .split(".")[0];
 
+console.log(currentPath);
+
 navLinks.forEach((link) => {
   let linkName = link
     .getAttribute("href")
