@@ -248,7 +248,7 @@ const projectId = urlParams.get("id");
 const projectTitle = document.querySelector(".detail__title");
 const projectDescription = document.querySelector(".detail__description");
 const projectLink = document.querySelector(".detail__link");
-const projectHeroImages = document.querySelector(".project__image").children;
+const projectHeroImages = document.querySelector(".detail__image").children;
 const projectPreviewImages1 = document.querySelector(
   ".preview__image--first",
 ).children;

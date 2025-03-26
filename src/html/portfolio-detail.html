@@ -9,19 +9,19 @@
   <body>
     <main>
       @@include("./header.html")
-      <div class="project__details">
-        <picture class="project__image">
+      <div class="project__details container">
+        <picture class="detail__image">
           <source
-            class="project__image--desktop"
+            class="detail__image--desktop"
             type="image/webp"
             media="(min-width: 75em)"
           />
           <source
-            class="project__image--tablet"
+            class="detail__image--tablet"
             type="image/webp"
             media="(min-width: 48em)"
           />
-          <img class="project__image--mobile" alt="" />
+          <img class="detail__image--mobile" alt="" />
         </picture>
 
         <section class="detail">
@@ -38,56 +38,59 @@
           </article>
         </section>
 
-        <section class="background">
-          <h3 class="background__title">Project Background</h3>
-          <p class="background__description">
-            This project was a front-end challenge from Frontend Mentor. It’s a
-            platform that enables you to practice building websites to a design
-            and project brief. Each challenge includes mobile and desktop
-            designs to show how the website should look at different screen
-            sizes. Creating these projects has helped me refine my workflow and
-            solve real-world coding problems. I’ve learned something new with
-            each project, helping me to improve and adapt my style.
-          </p>
-        </section>
+        <div>
+          <section class="background">
+            <h3 class="background__title">Project Background</h3>
+            <p class="background__description">
+              This project was a front-end challenge from Frontend Mentor. It’s
+              a platform that enables you to practice building websites to a
+              design and project brief. Each challenge includes mobile and
+              desktop designs to show how the website should look at different
+              screen sizes. Creating these projects has helped me refine my
+              workflow and solve real-world coding problems. I’ve learned
+              something new with each project, helping me to improve and adapt
+              my style.
+            </p>
+          </section>
 
-        <section class="preview">
-          <h3 class="preview__title">Static Previews</h3>
-          <div class="preview__images">
-            <picture class="preview__image--first">
-              <source
-                class="preview__image-first--desktop"
-                type="image/webp"
-                media="(min-width: 75em)"
-              />
-              <source
-                class="preview__image-first--tablet"
-                type="image/webp"
-                media="(min-width: 48em)"
-              />
-              <img
-                class="preview__image-first--mobile"
-                src=""
-                srcset=""
-                alt=""
-              />
-            </picture>
+          <section class="preview">
+            <h3 class="preview__title">Static Previews</h3>
+            <div class="preview__images">
+              <picture class="preview__image--first">
+                <source
+                  class="preview__image-first--desktop"
+                  type="image/webp"
+                  media="(min-width: 75em)"
+                />
+                <source
+                  class="preview__image-first--tablet"
+                  type="image/webp"
+                  media="(min-width: 48em)"
+                />
+                <img
+                  class="preview__image-first--mobile"
+                  src=""
+                  srcset=""
+                  alt=""
+                />
+              </picture>
 
-            <picture class="preview__image--second">
-              <source
-                class="preview__image-second--desktop"
-                type="image/webp"
-                media="(min-width: 75em)"
-              />
-              <source
-                class="preview__image-second--tablet"
-                type="image/webp"
-                media="(min-width: 48em)"
-              />
-              <img class="preview__image-second--mobile" alt="" />
-            </picture>
-          </div>
-        </section>
+              <picture class="preview__image--second">
+                <source
+                  class="preview__image-second--desktop"
+                  type="image/webp"
+                  media="(min-width: 75em)"
+                />
+                <source
+                  class="preview__image-second--tablet"
+                  type="image/webp"
+                  media="(min-width: 48em)"
+                />
+                <img class="preview__image-second--mobile" alt="" />
+              </picture>
+            </div>
+          </section>
+        </div>
       </div>
 
       @@include("./footer-contact.html")

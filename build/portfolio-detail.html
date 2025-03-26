@@ -39,19 +39,19 @@
   </button>
 </header>
 
-      <div class="project__details">
-        <picture class="project__image">
+      <div class="project__details container">
+        <picture class="detail__image">
           <source
-            class="project__image--desktop"
+            class="detail__image--desktop"
             type="image/webp"
             media="(min-width: 75em)"
           />
           <source
-            class="project__image--tablet"
+            class="detail__image--tablet"
             type="image/webp"
             media="(min-width: 48em)"
           />
-          <img class="project__image--mobile" alt="" />
+          <img class="detail__image--mobile" alt="" />
         </picture>
 
         <section class="detail">
@@ -68,56 +68,59 @@
           </article>
         </section>
 
-        <section class="background">
-          <h3 class="background__title">Project Background</h3>
-          <p class="background__description">
-            This project was a&#160;front-end challenge from Frontend Mentor. It&#8217;s a
-            platform that enables you to&#160;practice building websites to&#160;a&#160;design
-            and project brief. Each challenge includes mobile and desktop
-            designs to&#160;show how the website should look at&#160;different screen
-            sizes. Creating these projects has helped me&#160;refine my&#160;workflow and
-            solve real-world coding problems. I&#8217;ve learned something new with
-            each project, helping me&#160;to&#160;improve and adapt my&#160;style.
-          </p>
-        </section>
+        <div>
+          <section class="background">
+            <h3 class="background__title">Project Background</h3>
+            <p class="background__description">
+              This project was a&#160;front-end challenge from Frontend Mentor. It&#8217;s
+              a&#160;platform that enables you to&#160;practice building websites to&#160;a
+              design and project brief. Each challenge includes mobile and
+              desktop designs to&#160;show how the website should look at&#160;different
+              screen sizes. Creating these projects has helped me&#160;refine my
+              workflow and solve real-world coding problems. I&#8217;ve learned
+              something new with each project, helping me&#160;to&#160;improve and adapt
+              my&#160;style.
+            </p>
+          </section>
 
-        <section class="preview">
-          <h3 class="preview__title">Static Previews</h3>
-          <div class="preview__images">
-            <picture class="preview__image--first">
-              <source
-                class="preview__image-first--desktop"
-                type="image/webp"
-                media="(min-width: 75em)"
-              />
-              <source
-                class="preview__image-first--tablet"
-                type="image/webp"
-                media="(min-width: 48em)"
-              />
-              <img
-                class="preview__image-first--mobile"
-                src=""
-                srcset=""
-                alt=""
-              />
-            </picture>
+          <section class="preview">
+            <h3 class="preview__title">Static Previews</h3>
+            <div class="preview__images">
+              <picture class="preview__image--first">
+                <source
+                  class="preview__image-first--desktop"
+                  type="image/webp"
+                  media="(min-width: 75em)"
+                />
+                <source
+                  class="preview__image-first--tablet"
+                  type="image/webp"
+                  media="(min-width: 48em)"
+                />
+                <img
+                  class="preview__image-first--mobile"
+                  src=""
+                  srcset=""
+                  alt=""
+                />
+              </picture>
 
-            <picture class="preview__image--second">
-              <source
-                class="preview__image-second--desktop"
-                type="image/webp"
-                media="(min-width: 75em)"
-              />
-              <source
-                class="preview__image-second--tablet"
-                type="image/webp"
-                media="(min-width: 48em)"
-              />
-              <img class="preview__image-second--mobile" alt="" />
-            </picture>
-          </div>
-        </section>
+              <picture class="preview__image--second">
+                <source
+                  class="preview__image-second--desktop"
+                  type="image/webp"
+                  media="(min-width: 75em)"
+                />
+                <source
+                  class="preview__image-second--tablet"
+                  type="image/webp"
+                  media="(min-width: 48em)"
+                />
+                <img class="preview__image-second--mobile" alt="" />
+              </picture>
+            </div>
+          </section>
+        </div>
       </div>
 
       <section class="footer__contact">

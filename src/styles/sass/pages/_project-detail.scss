@@ -9,12 +9,12 @@
   }
 }
 
-.project__image {
-  margin-block-end: 4rem;
-}
-
 .detail {
   margin-block-end: 4.8rem;
+
+  &__image {
+    margin-block-end: 4rem;
+  }
 
   &__info {
     @extend %grid;
@@ -109,5 +109,56 @@
     &__description {
       max-width: none;
     }
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .project__details {
+    display: grid;
+    grid-template-columns: 35rem 1fr;
+    gap: 11.5rem 12.5rem;
+    padding-inline: 0;
+    margin-block-end: 6.4rem;
+  }
+
+  .detail {
+    max-width: 35rem;
+    margin-block-end: 0;
+
+    &__image {
+      grid-column: 1 / -1;
+      margin-block-end: 0;
+    }
+
+    &__info {
+      grid-template-columns: 1fr;
+      padding-block: 4.8rem;
+      gap: 0;
+    }
+
+    &__title {
+      margin-block-end: 2.9rem;
+    }
+
+    &__description {
+      grid-column: 1;
+      grid-row: 2;
+      margin-block-end: 2.3rem;
+    }
+
+    &__specs {
+      margin-block-end: 3.2rem;
+
+      small:first-of-type {
+        margin-block-end: 1.6rem;
+      }
+    }
+  }
+
+  .background,
+  .preview {
+    align-self: start;
+    grid-column: 2;
+    grid-row: 2;
   }
 }
